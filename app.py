@@ -117,10 +117,13 @@ def inject_theme():
     margin-bottom: 40px;
     overflow: hidden;
     box-shadow: 0 20px 50px var(--shadow);
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center !important;
     color: white !important;
 }}
-.hero-container * {{ color: white !important; }}
+.hero-container * {{ color: white !important; text-align: center !important; }}
 .hero-title {{
     font-size: 4rem;
     font-weight: 800;
